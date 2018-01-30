@@ -8,6 +8,7 @@ package edu.gatech.oad.antlab.person;
  * @author Bob
  * @version 1.1
  */
+import java.lang.Math;
 public class Person2 {
     /** Holds the persons real name */
     private String name;
@@ -50,4 +51,5 @@ public class Person2 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+
 }
