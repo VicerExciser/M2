@@ -1,4 +1,7 @@
 package edu.gatech.oad.antlab.person;
+
+import java.util.Stack;
+
 /**
  *  A simple class for person 3
  *  returns their name and a
@@ -43,6 +46,14 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		Stack<Character> stack= new Stack<>();
+		String reverse = "";
+		for (int i = 0; i < input.length(); i++) {
+			stack.push(input.charAt(i));
+		}
+		for (int i = 0; i < input.length(); i++) {
+			reverse += stack.pop();
+		}
+		return reverse;
 	}
 }
